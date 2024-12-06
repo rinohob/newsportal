@@ -1,0 +1,24 @@
+<sly data-sly-use.model="com.newsportal.core.models.TextImageModel">
+  <div id="text-image-component" class="text-image-component ${properties.imageAlignment}">
+    <div class="text-container">
+      <h2 class="text-title">${model.title}</h2>
+
+      <div class="text-description" data-sly-test="${model.description}">
+        ${model.description @ context='html'}
+      </div>
+    </div>
+
+    <div class="image-container">
+      <sly data-sly-test="${properties.imageAlignment == 'left'}">
+        <div class="image-left">
+          <sly data-sly-resource="${'img' @ resourceType='newsportal/components/image'}" />
+        </div>
+      </sly>
+      <sly data-sly-test="${properties.imageAlignment == 'right'}">
+        <div class="image-right">
+          <sly data-sly-resource="${'img' @ resourceType='newsportal/components/image'}" />
+        </div>
+      </sly>
+    </div>
+  </div>
+</sly>

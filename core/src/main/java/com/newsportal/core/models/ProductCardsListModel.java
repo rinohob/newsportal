@@ -1,4 +1,6 @@
 package com.newsportal.core.models;
+
+import lombok.Getter;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -15,19 +17,23 @@ public class ProductCardsListModel {
     private static String productExpiry;
 
     @ValueMapValue
-    private String productPrice ;
+    private String productPrice;
 
     @ValueMapValue
     private String productImage;
 
 
     @ValueMapValue
-    private String productColour ;
+    private String productColour;
+
+    @ValueMapValue
+    @Getter
+    private String containerTitle;
 
     @ValueMapValue
     private String[] productTags;
 
-    public static String getProductExpiry() {
+    public  String getProductExpiry() {
         return productExpiry;
     }
 
@@ -45,5 +51,5 @@ public class ProductCardsListModel {
 
     public String[] getProductTags() {
         return productTags;
-     }
+    }
 }

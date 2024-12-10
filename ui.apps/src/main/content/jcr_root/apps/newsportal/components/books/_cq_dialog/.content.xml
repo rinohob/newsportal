@@ -25,7 +25,7 @@
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                             name="./buks"/>
                     </buks>
-    <difbuks
+                    <difbuks
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                         composite="{Boolean}true"
@@ -35,42 +35,42 @@
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             name="./difbuks">
                             <items jcr:primaryType="nt:unstructured">
-                             <article-path
-                                 jcr:primaryType="nt:unstructured"
-                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="Article Path"
-                            name="./articlePath"/>
+                                <article-path
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Article Path"
+                                    name="./articlePath"/>
                             </items>
                         </field>
                     </difbuks>
-                <related-articles
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                composite="{Boolean}true"
-                fieldLabel="Related Articles">
-                <field
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/container"
-                    name="./relatedArticles">
-                    <items jcr:primaryType="nt:unstructured">
-                        <article-title
+                    <related-articles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Related Articles">
+                        <field
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Article Title"
-                            name="./articleTitle"/>
-                        <article-path
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="Article Path"
-                            name="./articlePath"/>
-                    </items>
-                </field>
-            </related-articles>
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./relatedArticles">
+                            <items jcr:primaryType="nt:unstructured">
+                                <article-title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Article Title"
+                                    name="./articleTitle"/>
+                                <article-path
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    fieldLabel="Article Path"
+                                    name="./articlePath"/>
+                            </items>
+                        </field>
+                    </related-articles>
                     <text2
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Text2"
-                            name="./text2"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text2"
+                        name="./text2"/>
                 </items>
             </column>
         </items>

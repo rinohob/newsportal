@@ -1,0 +1,44 @@
+<sly data-sly-use.model="com.newsportal.core.models.ProductCardsModel">
+    <div class="mkd-bnl-outer">
+        <div class="mkd-bnl-inner">
+            <sly data-sly-list.item="${model.productcardsList}">
+                <div class="mkd-pt-three-item mkd-post-item mkd-active-post-page card-2”>
+				<div class="mkd-pt-three-item-inner">
+                <div class="mkd-pt-three-item-inner2">
+                    <div class="mkd-pt-three-image-holder">
+                        <div class="mkd-post-info-category">
+                            <a href="https://discussion.qodeinteractive.com/category/world/" rel="category tag">${item.containerTitle}</a>
+                        </div>
+                        <a itemprop="url" class="mkd-pt-three-link mkd-image-link" href="https://discussion.qodeinteractive.com/our-favorite-photos-from-all-around/" target="_self">
+                            <img src=${item.productImage} alt="a" width="386" height="246">
+                        </a>
+                    </div>
+                    <div class="mkd-pt-three-content-holder">
+                        <div class="mkd-pt-three-content-holder-inner">
+                            <div class="mkd-pt-three-content-top-holder">
+                                <div class="mkd-pt-three-content-top-holder-cell">
+                                    <h5 class="mkd-pt-three-title">
+                                        <a itemprop="url" class="mkd-pt-link" href="https://discussion.qodeinteractive.com/our-favorite-photos-from-all-around/" target="_self"> ${item.containerTitle}</a>
+                                    </h5>
+                                    <div itemprop="dateCreated" class="mkd-post-info-date entry-date updated">
+                                        <a itemprop="url" href="https://discussion.qodeinteractive.com/2016/02/">${item.containerTitle} </a>
+                                        <meta itemprop="interactionCount" content="UserComments: 0">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mkd-pt-three-content-bottom-holder">
+                                <div class="mkd-pt-info-section clearfix">
+                                    <div>
+                                        <div class="mkd-post-info-comments-holder">
+                                            <a class="mkd-post-info-comments" href="https://discussion.qodeinteractive.com/our-favorite-photos-from-all-around/#respond" target="_self">0 Comments</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

@@ -1,0 +1,33 @@
+<!--  <sly data-sly-use.model="com.newsportal.core.models.ProductDetailModel"></sly>-->
+<!--  <div class="news-container">-->
+<!--    <div class="news-image">-->
+<!--      <sly data-sly-resource="${'image' @ resourceType='newsportal/components/image'}" />-->
+<!--    </div>-->
+<!--    <div class="news-content">-->
+<!--      <div class="news-title">-->
+<!--        <sly data-sly-resource="${'title' @ resourceType='newsportal/components/title'}" />-->
+<!--      </div>-->
+<!--      <div class="news-text">-->
+<!--        <sly data-sly-resource="${'text' @ resourceType='newsportal/components/text'}" />-->
+<!--      </div>-->
+<!--      <div class="news-button">-->
+<!--        <sly data-sly-resource="${'button' @ resourceType='newsportal/components/button'}" />-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<div class="news-image">
+  <img src="${model.imagePath}" alt="Product Image" />
+</div>
+
+<div class="news-content">
+  <div class="news-title">
+    ${model.title}
+  </div>
+  <div class="news-text">
+    ${model.text}
+  </div>
+  <div class="news-button">
+    <a href="${model.buttonLink}">${model.buttonText}</a>
+  </div>
+</div>

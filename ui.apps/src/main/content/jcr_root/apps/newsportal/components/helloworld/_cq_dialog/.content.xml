@@ -1,63 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root
-  xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-  xmlns:jcr="http://www.jcp.org/jcr/1.0"
-  xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-  xmlns:cq="http://www.day.com/jcr/cq/1.0"
-  xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
-  jcr:primaryType="nt:unstructured"
-  jcr:title="Properties"
-  sling:resourceType="cq/gui/components/authoring/dialog">
-  <content
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="nt:unstructured"
-    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-    hideHeader="{Boolean}true">
-    <items jcr:primaryType="nt:unstructured">
-      <column
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
         jcr:primaryType="nt:unstructured"
-        sling:resourceType="granite/ui/components/coral/foundation/container">
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+        hideHeader="{Boolean}true">
         <items jcr:primaryType="nt:unstructured">
-          <titleField
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-            fieldLabel="Title"
-            name="./titleField"
-            required="{Boolean}true" />
-
-          <imageWithTitleDescription
-            jcr:primaryType="nt:unstructured"
-            fieldLabel="Image with Title and Description"
-            fieldDescription="One or more image with title and description."
-            composite="{Boolean}true"
-            sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
-            <field
-              jcr:primaryType="nt:unstructured"
-              required="{Boolean}true"
-              name="./imageWithTitleDescriptionList"
-              sling:resourceType="granite/ui/components/coral/foundation/container">
-              <items jcr:primaryType="nt:unstructured">
-                <image
-                  jcr:primaryType="nt:unstructured"
-                  emptyText="Image Path"
-                  required="{Boolean}true"
-                  name="./image"
-                  rootPath="/content"
-                  sling:resourceType="granite/ui/components/coral/foundation/form/pathfield" />
-                <title
-                  jcr:primaryType="nt:unstructured"
-                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                  fieldLabel="Title"
-                  name="./title" />
-                <description
-                  jcr:primaryType="nt:unstructured"
-                  sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                  fieldLabel="Description"
-                  name="./description" />
-              </items>
-            </field>
-          </imageWithTitleDescription>
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <titleField
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title"
+                        name="./titleField"
+                        required="{Boolean}true"/>
+                    <imageWithTitleDescription
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="One or more image with title and description."
+                        fieldLabel="Image with Title and Description">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./imageWithTitleDescriptionList"
+                            required="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                    emptyText="Image Path"
+                                    name="./image"
+                                    required="{Boolean}true"
+                                    rootPath="/content"/>
+                                <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldLabel="Title"
+                                    name="./title"/>
+                                <description
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                    fieldLabel="Description"
+                                    name="./description"/>
+                            </items>
+                        </field>
+                    </imageWithTitleDescription>
+                </items>
+            </column>
         </items>
-      </column>
-    </items>
-  </content>
+    </content>
 </jcr:root>

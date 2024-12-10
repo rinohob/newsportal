@@ -1,0 +1,48 @@
+{
+  "products":{
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "containerTitle": "Product Cards Container",
+    "status": "active",
+    "category": "Electronics",
+    "loadProductsFromCF": true,
+    "cfProductPaths": [
+      "/content/dam/itc-rightshift/content-fragments/product-details",
+      "/content/dam/itc-rightshift/content-fragments/laptop-details"
+    ],
+    "containerDescription": "Description of product cards",
+    "textIsRich": [
+      "true"
+    ],
+    "productcardsList": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "productTags": "wknd-shared:activity/hiking",
+        "productColour": "#2ECC40",
+        "productExpiry": "Fri Nov 01 2024 00:00:00 GMT+0530",
+        "productImage": "/content/dam/will-of-change/Screenshot 2024-09-17 at 11.13.41 AM (7).png",
+        "productPrice": "345"
+      }
+    },
+    "popularProductsList": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "productTags": "wknd-shared:activity/hiking",
+        "productColour": "#FF4136",
+        "productExpiry": "Wed Dec 04 2024 00:00:00 GMT+0530",
+        "productImage": "/content/dam/will-of-change/Screenshot 2024-09-17 at 11.13.11 AM.png",
+        "productPrice": "456"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "productTags": "wknd-shared:season/summer",
+        "productColour": "#2ECC40",
+        "productExpiry": "Tue Dec 03 2024 00:00:00 GMT+0530",
+        "productImage": "/content/dam/wknd/en/site/not-found.jpg",
+        "productPrice": "567"
+      }
+    }
+  }
+}

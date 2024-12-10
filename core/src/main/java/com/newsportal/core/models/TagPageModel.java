@@ -1,32 +1,29 @@
-package com.newsportal.core.internal.v1;
+package com.newsportal.core.models;
 
-import com.newsportal.core.models.TextImageModel;
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = Resource.class,
-        adapters = TextImageModel.class,
-        resourceType = { TextImageModelImpl.RESOURCE_TYPE },
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class TextImageModelImpl implements TextImageModel {
-
-    protected static final String RESOURCE_TYPE = "newsportal/components/text-and-image";
+public class TagPageModel {
 
     @ValueMapValue
+    @Default(values = "Yes Title")
     private String title;
 
     @ValueMapValue
+    @Default(values = " yes Description")
     private String description;
 
-    @Override
     public String getTitle() {
         return title;
     }
 
-    @Override
     public String getDescription() {
         return description;
     }
+
 }

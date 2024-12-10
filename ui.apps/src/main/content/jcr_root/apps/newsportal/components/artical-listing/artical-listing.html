@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.newsportal.core.models.ArticalListingModelImpl">
+    <div class="row g-4 justify-content-center">
+        <sly data-sly-list="${model.pagesList}">
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+                        <img src="${item.image}" class="img-fluid rounded-top w-100" alt="">
+                    </div>
+                    <img src="${item.images}"  alt="">
+                    <div class="service-content rounded-bottom bg-light p-4">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4">${item.title}</h5>
+                            <p class="mb-4">${item.description @ context='html'}</p>
+                            <a href="${item.image}.html" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </sly>
+
+        <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
+        </div>
+    </div>
+</sly>
